@@ -17,9 +17,6 @@ def logarithm(a, b):
     else:
         return math.log(a,b)
 
-def exponent(a, b):
-    return a ** b
-
 def sub(a, b):
     return a-b
 
