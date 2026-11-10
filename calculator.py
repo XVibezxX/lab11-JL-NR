@@ -8,8 +8,17 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
+def divide(a, b):
+    if a == 0:
+        raise ZeroDivisionError("Divide by zero")
+    else:
+        return b / a
+
 def logarithm(a, b):
-    return math.log(a,b)
+    if a <= 0 or b <= 0:
+        raise ValueError("Arguments for logarithm must be positive")
+    else:
+        return math.log(a,b)
 
 def exponent(a, b):
     return a ** b
