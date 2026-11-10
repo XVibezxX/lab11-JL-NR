@@ -46,13 +46,9 @@ class TestCalculator(unittest.TestCase):
     # def test_hypotenuse(self): # 3 assertions
     #     fill in code
 
-    # def test_sqrt(self): # 3 assertions
-    #     # Test for invalid argument, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #    square_root(NUM)
-    #     # Test basic function
-    #     fill in code
-    ##########################
+    def test_sqrt(self): # 3 assertions
+        with self.assertRaises(ValueError):
+            sqrt(-1)
 
 # Do not touch this
 if __name__ == "__main__":
