@@ -4,7 +4,7 @@ def square_root(a):
 
 def hypotenuse(a, b):
     math.hypot(a, b)
-    
+
 def add(a, b):
     return a + b
 
