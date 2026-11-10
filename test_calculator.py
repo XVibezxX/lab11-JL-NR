@@ -51,7 +51,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_sqrt(self): # 3 assertions
         with self.assertRaises(ValueError):
-            sqrt(-1)
+            square_root(-1)
 
 # Do not touch this
 if __name__ == "__main__":
