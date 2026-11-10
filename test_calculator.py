@@ -26,13 +26,15 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             div(0, 5)
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+    def test_logarithm(self): # 3 assertions
+        self.assertEqual(logarithm(10, 100), 2)
+        self.assertEqual(logarithm(2, 8), 3)
+        self.assertEqual(logarithm(5, 25), 2)
 
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
-    # ##########################
+    def test_log_invalid_base(self): # 1 assertion
+        # use same technique from test_divide_by_zero
+        with self.assertRaises(ValueError):
+            log(0, 5)
     
     ######## Partner 1
     # def test_log_invalid_argument(self): # 1 assertion
