@@ -11,12 +11,6 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError("Divide by zero")
-    else:
-        return b / a
-
 def logarithm(a, b):
     if a <= 0 or b <= 0:
         raise ValueError("Arguments for logarithm must be positive")
