@@ -25,10 +25,5 @@ def div(a, b):
         raise ZeroDivisionError("Denominator cannot be zero")
     return b/a
 
-def log(a, b):
-    if a <= 0 or b <= 0:
-        raise ValueError("Arguments for logarithm must be positive")
-    return math.log(b, a)
-
 def exp(a, b):
     return a**b
