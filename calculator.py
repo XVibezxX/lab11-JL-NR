@@ -1,4 +1,10 @@
 import math
+def square_root(a):
+    math.sqrt(a)
+
+def hypotenuse(a, b):
+    math.hypot(a, b)
+    
 def add(a, b):
     return a + b
 
