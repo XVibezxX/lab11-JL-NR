@@ -42,3 +42,7 @@ def log(a, b):
 def exp(a, b):
     return a**b
 
+def square_root(a):
+    math.sqrt(a)
+def hypotenuse(a, b):
+    math.hypot(a, b)
