@@ -14,8 +14,10 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(sub(0, 0), 0)
 
     ######## Partner 1
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self): # 3 assertions
+        self.assertEqual(multiply(5, 3), 15)
+        self.assertEqual(multiply(-1, 7), -7)
+        self.assertEqual(multiply(0, 20), 0)
 
     def test_divide(self): # 3 assertions
         self.assertEqual(divide(3, 6), 2)
