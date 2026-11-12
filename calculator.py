@@ -18,7 +18,7 @@ def logarithm(a, b):
     if a <= 0 or b <= 0:
         raise ValueError("Arguments for logarithm must be positive")
     else:
-        return math.log(a,b)
+        return math.log(b,a)
 
 def mul(a, b):
     return a*b
