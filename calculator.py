@@ -3,7 +3,10 @@ def square_root(a):
     math.sqrt(a)
 
 def hypotenuse(a, b):
-    math.hypot(a, b)
+    if a <= 0 or b <= 0:
+        raise ValueError("Arguments for logarithm must be positive")
+    else:
+        return math.hypot(a, b)
 
 def add(a, b):
     return a + b
